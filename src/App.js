@@ -104,7 +104,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div>
+        <div className="main-font">
           <h1 style={{ color: '#4CAF50' }}>Fruits of Holy Spirit</h1>
         </div>
         <div className="container">
@@ -124,9 +124,10 @@ class App extends React.Component {
               >
                 {item.image}
                 <div
+                  className="main-font"
                   style={{
                     color: '#43A047',
-                    fontWeight: 500,
+                    fontWeight: 600,
                     marginTop: '15px',
                   }}
                 >
@@ -135,6 +136,30 @@ class App extends React.Component {
               </div>
             );
           })}
+        </div>
+        <div style={{ marginTop: '3em' }}>
+          <p className="main-font" style={{ color: 'darkgoldenrod' }}>
+            <em>
+              Icons made by{' '}
+              <a
+                href="https://www.flaticon.com/authors/freepik"
+                title="Freepik"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Freepik
+              </a>{' '}
+              from{' '}
+              <a
+                href="https://www.flaticon.com/"
+                title="Flaticon"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                www.flaticon.com
+              </a>
+            </em>
+          </p>
         </div>
       </div>
     );
