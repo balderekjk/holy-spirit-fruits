@@ -39,6 +39,16 @@
   font-weight: 500;
 }
 
+@media screen and (max-width: 500px) {
+  .body {
+    font-size: 1.1em;
+  }
+
+  .footer {
+    font-weight: 400;
+  }
+}
+
 .title-close-btn {
   display: flex;
   justify-content: flex-end;

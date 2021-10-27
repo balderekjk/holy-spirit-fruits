@@ -24,6 +24,12 @@ body {
   border-color: rgba(89, 205, 54, 0.603);
 }
 
+@media screen and (max-width: 500px) {
+  .card {
+    width: 125px;
+  }
+}
+
 .card:hover {
   transform: scale(1.05);
   cursor: pointer;
