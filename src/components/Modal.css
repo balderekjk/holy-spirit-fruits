@@ -1,0 +1,52 @@
+.modal-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(195, 255, 180, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  width: 500px;
+  height: 300px;
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.content {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: green;
+}
+
+.body {
+  font-size: 1.5rem;
+}
+
+.footer {
+  font-weight: 500;
+}
+
+.title-close-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title-close-btn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
