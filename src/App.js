@@ -56,8 +56,8 @@ class App extends React.Component {
       {
         name: 'Watermelon',
         value: 'Generosity',
-        search: 'gener*s*',
-        total: 126,
+        search: 'genero*s*',
+        total: 43,
         image: <img className="card" alt="watermelon" src={watermelon} />,
       },
       {
@@ -91,7 +91,7 @@ class App extends React.Component {
       params: {
         query: search,
         limit: 1,
-        offset: Math.floor(Math.random() * (total + 1)),
+        offset: Math.floor(Math.random() * (total - 1)),
       },
     });
     this.setState({ scripture: response.data.data.verses[0] });
@@ -105,7 +105,7 @@ class App extends React.Component {
     return (
       <div>
         <div className="main-font">
-          <h1 style={{ color: '#4CAF50' }}>Fruits of Holy Spirit</h1>
+          <h1 style={{ color: '#369439' }}>Fruits of Holy Spirit</h1>
         </div>
         <div className="container">
           {this.state.showModal && (
@@ -126,7 +126,8 @@ class App extends React.Component {
                 <div
                   className="main-font"
                   style={{
-                    color: '#43A047',
+                    color: '#369439',
+                    fontSize: '1.2em',
                     fontWeight: 600,
                     marginTop: '15px',
                   }}
