@@ -107,7 +107,7 @@ class App extends React.Component {
         <div className="main-font">
           <h1 style={{ color: '#369439' }}>Fruits of Holy Spirit</h1>
         </div>
-        <div className="contained">
+        <div className="container">
           {this.state.showModal && (
             <Modal
               scripture={this.state.scripture}
