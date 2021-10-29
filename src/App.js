@@ -21,64 +21,77 @@ class App extends React.Component {
       {
         name: 'Pomegranate',
         value: 'Love',
-        search: 'lov*',
-        total: 778,
+        search: 'lovein',
+        //lov*
+        total: 491,
+        // 778
         image: <img className="card" alt="pomegranate" src={pomegranate} />,
       },
       {
         name: 'Orange',
         value: 'Joy',
-        search: 'joy*',
-        total: 153,
+        //joy*
+        search: 'joyfu',
+        total: 110,
+        // 153
         image: <img className="card" alt="orange" src={orange} />,
       },
       {
         name: 'Olive',
         value: 'Peace',
-        search: 'peace*',
-        total: 355,
+        search: 'peacefu',
+        total: 147,
+        // 355
         image: <img className="card" alt="olive" src={olive} />,
       },
       {
         name: 'Grape',
         value: 'Patience',
-        search: 'patien*',
-        total: 62,
+        search: 'patient',
+        total: 51,
+        // 62
         image: <img className="card" alt="grape" src={grape} />,
       },
       {
         name: 'Coconut',
         value: 'Kindness',
-        search: 'kind*',
-        total: 338,
+        search: 'kindne',
+        // kindne
+        total: 174,
+        // 338
         image: <img className="card" alt="coconut" src={coconut} />,
       },
       {
         name: 'Watermelon',
         value: 'Generosity',
-        search: 'genero*s*',
-        total: 43,
+        search: 'generosi',
+        // giveng
+        total: 23,
+        // 43
         image: <img className="card" alt="watermelon" src={watermelon} />,
       },
       {
         name: 'Fig',
         value: 'Faithfulness',
-        search: 'faith*',
-        total: 139,
+        search: 'faithfulne',
+        total: 73,
+        // 139
         image: <img className="card" alt="fig" src={fig} />,
       },
       {
         name: 'Pear',
         value: 'Gentleness',
-        search: 'gentl*',
-        total: 21,
+        search: 'gentlene',
+        total: 14,
+        // 21
         image: <img className="card" alt="pear" src={pear} />,
       },
       {
         name: 'Lemon',
         value: 'Self-Control',
         search: 'control',
-        total: 61,
+        total: 30,
+        // 61
         image: <img className="card" alt="lemon" src={lemon} />,
       },
     ];
@@ -92,6 +105,8 @@ class App extends React.Component {
         query: search,
         limit: 1,
         offset: Math.floor(Math.random() * (total - 1)),
+        range: 'psa-pro, isa, mat-jud',
+        fuzziness: 2,
       },
     });
     this.setState({ scripture: response.data.data.verses[0] });
