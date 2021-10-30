@@ -27,6 +27,14 @@ a:visited {
   gap: 2em;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .item-container > * {
+      margin: 1.5em 1.5em 0 1.5em;
+    }
+  }
+}
+
 .card {
   width: 200px;
   border-style: solid;

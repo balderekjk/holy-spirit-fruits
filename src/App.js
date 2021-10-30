@@ -136,6 +136,7 @@ class App extends React.Component {
                   this.searchScripture(item.search, item.total);
                   this.setState({ showModal: true });
                 }}
+                className="item-container"
               >
                 {item.image}
                 <div
